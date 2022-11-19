@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    background: linear-gradient(15deg,#33ddff,#004466);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bubble{
+    position: absolute;
+    top: 40vh;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+}
+
+.bubbleone{
+    box-shadow: inset 0px 0px 10px #fff, inset -10px 10px 15px #235487 , inset 5px 5px 10px #ff3245,
+    inset -5px 5px 25px #fff, inset 15px -25px 25px violet !important;
+}
+
+.bubbletwo{
+    box-shadow: inset 0px 0px 10px #fff, inset -10px 10px 15px #886333 , inset 5px 5px 10px #ff3245,
+    inset -5px 5px 25px #fff, inset 15px -25px 25px deeppink !important;
+}
+
+.bubblethree{
+    box-shadow: inset 0px 0px 10px #fff, inset -10px 10px 15px #ddff33 , inset 5px 5px 10px #ff3245,
+    inset -5px 5px 25px #fff, inset 15px -25px 25px #ffff33 !important;
+}
+
+.bubblefour{
+    box-shadow: inset 0px 0px 10px #fff, inset -10px 10px 15px #d83 , inset 5px 5px 10px #ff3245,
+    inset -5px 5px 25px #fff, inset 15px -25px 25px #34d !important;
+}
+
+.bubbleone{
+    box-shadow: inset 0px 0px 10px #000, inset -10px 10px 15px #235487 , inset 5px 5px 10px #ff3245,
+    inset -5px 5px 25px #fff, inset 15px -25px 25px violet !important;
+}
+
+.scoreboard{
+    width: 300px;
+    height: 60px;
+    gap: 5px;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 150px);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+
+}
+
+.shadow{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to bottom , #00000055,#00000066);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.winner{
+    width: 300px;
+    height: 120px;
+    background-color: white;
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    z-index: 12345678;
+}
+
+.loser{
+    display: none;
+    z-index: 12345678;
+}
+
+.mainGame{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    z-index: 12345678;
+}
+
+.mainGame h3{
+    font-size: 2rem;
+}
+
+button{
+      padding: 10px 20px;
+      cursor: pointer;
+}
+
+.mainGame .start{
+  
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    transition: all .4s ease-in;
+}
+
+.mainGame button:hover{
+    color: white;
+    background-color: #999;
+}
+
+
+.flex{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.flex button{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #33ddff;
+    border-radius: 1rem;
+}
